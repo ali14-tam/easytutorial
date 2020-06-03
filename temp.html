@@ -1,0 +1,184 @@
+<?php
+require('/home/opshmfm/public_html/agencias/webs/cnt/tissels.php');
+
+function getTicket($user, $age){
+
+$ticket= rand(5000, 1000000);
+
+  if ( $age >= 30 ) {
+    $msg  = "Hello" . " " . $user . "Your Age Is" . $age . "<br>";
+    $msg .= "You are qualified to get A Ticket congratz :)" . "<br>";
+    $msg  .= "Your Ticket Id Is [ <span> eds
+     " .   $ticket . "</span> ]";
+  }
+  else {
+    $msg  = "Hello" . $user . "Your Age Is" . $age . "<br>";
+    $msg .= "You Are Not Qualified To get A Ticket Sorry :(";
+  }
+  return $msg;
+}
+
+$id = getTicket("Ali salem", 32);
+
+function makeFrame( $element){
+      $frame  = " <div class='nice-frame'> ";
+      $frame .= $element;
+      $frame .= "</div>";
+
+     return $frame;
+}
+
+$myELement = makeFrame($id);
+// 
+// $lang  = "<ul>";
+// $lang .= "<li>PHP</li>";
+// $lang .= "<li>HTML</li>";
+// $lang .= "<li>CSS</li>";
+// $lang .= "<li>Javascript</li>";
+// $lang .= "</ul>";
+//
+//  echo $lang ;
+ ?>
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>erthtyh</title>
+    <style>
+        .nice-frame {
+          padding: 10px;
+          text-align: center;
+          width: 400px;
+          margin: 20px auto;
+          border-radius: 10px;
+          background-color: #eee;
+          border: 1px solid #ccc;
+          font-family: tahoma, arial;
+        }
+
+        .nice-frame span {
+          font-weight: bold;
+          color: #f00;
+        }
+    </style>
+  </head>
+  <body>
+    <?php
+    echo $myELement;
+    ?>
+
+  </body>
+</html>
+
+
+
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title></title>
+  </head>
+  <body>
+<div class="menu-bar">
+  <ul>
+    <li class="active">
+      <a href="#"><i class="fa fa-home"></i>Home</a>
+    </li>
+    <li>
+      <a href="#"><i class="fa fa-user"></i>Aout Us</a>
+        <div class="sub-menu-1">
+            <ul>
+              <li><a href="#">Mission</a></li>
+              <li><a href="#">Vision</a></li>
+              <li><a href="#">Team</a></li>
+            </ul>
+        </div>
+    </li>
+    <li>
+      <a href="#"><i class="fa fa-clone"></i>Services</a>
+        <div class="sub-menu-1">
+            <ul>
+              <li><a href="#">Web Designing</a></li>
+              <li class="hover-me">
+                <a href="#">Marketing</a>
+                <i class="fa fa-angle-right"></i>
+                <div class="sub-menu-2">
+                  <ul>
+                    <li><a href="#">Seo</a></li>
+                    <li><a href="#">Social Media</a></li>
+                    <li><a href="#">Emial Marketing</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="hover-me">
+                <a href="#">Mobile App</a>
+                <i class="fa fa-angle-right"></i>
+                <div class="sub-menu-2">
+                  <ul>
+                    <li><a href="#">Android App</a></li>
+                    <li><a href="#">Ios App</a></li>
+                    <li><a href="#">windows App</a></li>  
+                  </ul>
+                </div>
+              </li>
+            </ul>
+        </div>
+    </li>
+    <li>
+      <a href="#"><i class="fa fa-users"></i>Clients</a>
+      <div class="sub-menu-1">
+          <ul>
+            <li><a href="#">Mission</a></li>
+            <li><a href="#">Vision</a></li>
+            <li><a href="#">Team</a></li>
+          </ul>
+      </div>
+    </li>
+    <li>
+      <a href="#"><i class="fa fa-angellist"></i>Investers</a>
+      <div class="sub-menu-1">
+          <ul>
+            <li><a href="#">Mission</a></li>
+            <li><a href="#">Vision</a></li>
+            <li><a href="#">Team</a></li>
+          </ul>
+      </div>
+    </li>
+    <li>
+      <a href="#"><i class="fa fa-inr"></i>Pricing</a>
+      <div class="sub-menu-1">
+          <ul>
+            <li><a href="#">Mission</a></li>
+            <li><a href="#">Vision</a></li>
+            <li><a href="#">Team</a></li>
+          </ul>
+      </div>
+    </li>
+    <li>
+      <a href="#"><i class="fa fa-edit"></i>Training</a>
+      <div class="sub-menu-1">
+          <ul>
+            <li><a href="#">Mission</a></li>
+            <li><a href="#">Vision</a></li>
+            <li><a href="#">Team</a></li>
+          </ul>
+      </div>
+    </li>
+    <li>
+      <a href="#"><i class="fa fa-phone"></i>Contact</a>
+      <div class="sub-menu-1">
+          <ul>
+            <li><a href="#">Mission</a></li>
+            <li><a href="#">Vision</a></li>
+            <li><a href="#">Team</a></li>
+          </ul>
+      </div>
+    </li>
+  </ul>
+</div>
+  </body>
+</html>
